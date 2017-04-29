@@ -13,8 +13,8 @@ $(document).ready(function(){
 	function displayPosts(subreddit) {
 		$.get('http://www.reddit.com/r/' + subreddit + '.json').done(function(response){			
 			console.log(response[0]);
-			response.data.children.slice()
-			response.data.children.forEach(function(i) {
+			var feed = response.data.children.splice(1, 12);
+			feed.forEach(function(i) {
 				var image = i.data.thumbnail;
 				var title = i.data.title;	
 				var author = i.data.author;
