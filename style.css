@@ -7,6 +7,12 @@ body {
 
 #heading {
 	font-family: 'Amatic SC', serif;
+	font-size: 30px;
+}
+
+.subreddit {
+	text-align: left;
+	margin: 1%;
 }
 
 .post {
