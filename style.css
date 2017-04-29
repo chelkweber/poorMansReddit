@@ -1,0 +1,33 @@
+body {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+}
+
+#heading {
+	font-family: 'Amatic SC', serif;
+}
+
+.post {
+	width: 20%;
+	display: inline-block;
+}
+
+.post img {
+	width: 90%;
+	height: auto;
+	margin: auto;
+}
+
+.post #title {
+	font-weight: bold;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.post #author {
+	font-size: 16px;
+	padding: 0;
+	margin: 0 auto;
+}
