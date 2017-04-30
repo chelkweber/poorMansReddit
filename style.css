@@ -3,35 +3,93 @@ body {
 	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 20px;
+	background-color: #EBD8D0;
+	color: #50514F;
+}
+
+#heading-text {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	background-color: #EAC9C1;
+	border-bottom: 2px solid #D3AB9E;
 }
 
 #heading {
 	font-family: 'Amatic SC', serif;
-	font-size: 30px;
+	font-size: 55px;
+	float: left;
+	width: 20%;
+	text-align: left;
+	padding-left: 60px;
 }
 
-.subreddit {
-	text-align: left;
-	margin: 1%;
+#subreddits {
+	width: 60%;
+	display: inline-block;
+	padding: 4%;
+}
+
+.check {
+	font-family: 'Amatic SC', serif;
+	visibility: hidden;
+}
+
+input {
+	display: none;
+}
+
+input:checked {
+    display: inline;
+}
+
+button {
+	font-family: 'Amatic SC', serif;
+	background-color: #EBD8D0;
+	display: inline-block;
+	width: 100%;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	margin-top: 1%;
+}
+
+#feed {
+	clear: both;
+	max-width: 940px;
+	margin: 0 auto;
 }
 
 .post {
 	width: 30%;
+	margin: 0 auto;
+	height: 120px;
 	display: inline-block;
 }
 
 .post img {
 	width: 90%;
 	height: auto;
-	margin: auto;
+	margin: 0 auto;
+	border-radius: 25px;
 }
 
-.post #title {
+.post .caption {
+	display: none;
+	color: gray;
+	opacity: 25%;
+	border-radius: 25px;
+}
+
+.post .title {
 	padding: 0;
 	margin: 0 auto;
 }
 
-.post #author {
+.post .author {
 	font-size: 16px;
 	padding: 0;
 	margin: 0 auto;

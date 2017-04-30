@@ -7,42 +7,56 @@
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans+Condensed:300,700" rel="stylesheet">
 	</head>
 	<body>
-		<form id="subreddit-choice">
-			<label id="heading">What do you think is cute?</label><br>
-			<label>
-				<input class="subreddit" type="radio" name="animal" value="rarepuppers" checked>
-				Dogs
-			</label>
-			<label>
-				<input class="subreddit" type="radio" name="animal" value="CatsStandingUp" >
-				Cats
-			</label>
-			<label>
-				<input class="subreddit" type="radio" name="animal" value="babyelephantgifs" >
-				Elephants
-			</label>
-			<label>
-				<input class="subreddit" type="radio" name="animal" value="slothgifs" >
-				Sloths
-			</label>
-			<label>
-				<input class="subreddit" type="radio" name="animal" value="babyhippos" >
-				Hippos
-			</label>
-			<label>
-				<input class="subreddit" type="radio" name="animal" value="Delightfullychubby" >
-				Chubby Animals
-			</label>
-			<label>
-				<input class="subreddit" type="radio" name="animal" value="Aww" >
-				Anything
-			</label><br>
-			<button type="button">Submit</button>
-		</form>
-		
+		<header>
+			<div id="heading-text">
+				<h1 id="heading">Cute Reddit</h1>
+				<form>
+					<div id="subreddits">
+						<label>
+							<input class="subreddit" type="radio" name="animal" value="rarepuppers" checked>
+							<span class="check">&#x2613;</span>
+							Dogs
+						</label>
+						<label>
+							<input class="subreddit" type="radio" name="animal" value="CatsStandingUp" >
+							<span class="check">&#x2613;</span>
+							Cats
+						</label>
+						<label>
+							<input class="subreddit" type="radio" name="animal" value="babyelephantgifs" >
+							<span class="check">&#x2613;</span>
+							Elephants
+						</label>
+						<label>
+							<input class="subreddit" type="radio" name="animal" value="slothgifs" >
+							<span class="check">&#x2613;</span>
+							Sloths
+						</label>
+						<label>
+							<input class="subreddit" type="radio" name="animal" value="babyhippos" >
+							<span class="check">&#x2613;</span>
+							Hippos
+						</label>
+						<label>
+							<input class="subreddit" type="radio" name="animal" value="Delightfullychubby" >
+							<span class="check">&#x2613;</span>
+							Chubby Animals
+						</label>
+						<label>
+							<input class="subreddit" type="radio" name="animal" value="Aww" >
+							<span class="check">&#x2613;</span>
+							Anything
+						</label>
+						<button type="button">Submit</button>
+					</div>
+				</form>
+			</div>
+		</header>
+
+
 		<div id="feed">
 		</div>
-
+		
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="script.js"></script>
 	</body>

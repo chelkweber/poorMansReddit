@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	$.get('http://www.reddit.com/r/rarepuppers.json').done(function(response){	
-		console.log(response.data.children);
+		console.log(response);
 	})
 	
 	$('button').on('click', function() {
@@ -19,11 +19,10 @@ $(document).ready(function(){
 				var title = i.data.title;	
 				var author = i.data.author;
 				var url = i.data.url;
-				$('#feed').append('<div class="post"><a class="link" href=' + url + '><img src=' + image + '></a><p id="title">' + title + '</p>' + '<p id="author">' + author + '</p></div>');
+				$('#feed').append('<div class="post"><a class="link" href=' + url + '><img src=' + image + '></a><p class="title">' + title + '</p>' + '<p class="author">' + author + '</p></div>');
 				$('.link').attr('target', '_blank');
+				})
 			})	
-		})	
-	}
-	
+		}
 })
 
