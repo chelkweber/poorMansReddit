@@ -4,6 +4,12 @@ $(document).ready(function(){
 		console.log(response);
 	})
 	
+	$('.subreddit').click(function(e) {
+		$(e.target).children('.check').toggleClass('checked');
+		console.log(e.target);
+		
+	})
+	
 	$('button').on('click', function() {
 		var choice = $('input[name="animal"]:checked').val();
 		$('#feed').empty()

@@ -35,15 +35,7 @@ header {
 
 .check {
 	font-family: 'Amatic SC', serif;
-	visibility: hidden;
-}
-
-input {
 	display: none;
-}
-
-input:checked {
-    display: inline;
 }
 
 button {
@@ -55,6 +47,12 @@ button {
 	border: none;
 	border-radius: 10px;
 	margin-top: 1%;
+	outline: none;
+}
+
+button:hover {
+	background-color: #D3AB9E;
+	outline: none;
 }
 
 #feed {
